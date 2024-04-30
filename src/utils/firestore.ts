@@ -8,12 +8,12 @@ initializeApp({ credential: credential.applicationDefault() });
 const firestore = new Firestore();
 
 // Note: This requires setting an env variable in Cloud Run
-if (process.env.NODE_ENV !== 'production') {
-  firestore.settings({
-      host: "localhost:8080", // Default port for Firestore emulator
-      ssl: false
-  });
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   firestore.settings({
+//       host: "localhost:8080", // Default port for Firestore emulator
+//       ssl: false
+//   });
+// }
 
 /**
  * Retrieves a video from the Firestore Video collection
