@@ -5,7 +5,7 @@ export const usersCollectionId = "users";
 
 // Cloud Storage
 export const rawVideoBucketName = "alesiafitness-firebase.appspot.com";
-export const processedVideoBucketName = "cloud-video-uploader-processed-videos";
+export const processedVideoBucketName = "alesiafitness-firebase-processed-video";
 
 export const localRawVideoPath = "./raw-videos";
 export const localProcessedVideoPath = "./processed-videos";
