@@ -45,7 +45,7 @@ export const processVideo = async (req: Request, res: Response) => {
     try {
         JSON.parse(message);
     } catch (e) {
-        res.status(400).send(`Bad Request: ${e}`);
+        res.status(204).send(`Bad Request: ${e}`);
         return;
     }
     const data = JSON.parse(message);
@@ -116,5 +116,5 @@ export const processVideo = async (req: Request, res: Response) => {
         deleteProcessedVideo(outputFileName)
     ]);
 
-    return res.status(200).json({ message: `Video processed successfully` });
+    return res.status(204).json({ message: `Video processed successfully` });
 };
