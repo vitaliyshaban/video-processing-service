@@ -50,6 +50,8 @@ export const processVideo = async (req: Request, res: Response) => {
     }
     const data = JSON.parse(message);
     console.log(data);
+    res.status(204).send(`Bad Request: The best!!!`);
+    return;
     //   try {
     //     console.log(pubSubMessage.data);
     //     const message = pubSubMessage.data ? Buffer.from(pubSubMessage?.data, "base64").toString().trim() : '{"name": "0qSnXrOH0MZpcUIs7ric8nUWYvh2-1714491477956.mp4"}';
